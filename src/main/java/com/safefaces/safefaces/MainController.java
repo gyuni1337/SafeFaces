@@ -1,9 +1,10 @@
 package com.safefaces.safefaces;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
 
-public class HelloController {
+import javafx.scene.control.Label;
+public class MainController {
+
     @FXML
     private Label welcomeText;
 
