@@ -2,10 +2,15 @@ package com.safefaces.safefaces.Controller;
 
 import com.safefaces.safefaces.Model.Contact;
 import com.safefaces.safefaces.Model.Role;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 
 import javafx.scene.control.Label;
+import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+
+import java.util.HashMap;
 
 public class MainController {
 
@@ -13,6 +18,8 @@ public class MainController {
     private TextField nameField;
     @FXML private TextField phoneField;
     @FXML private Label outputLabel;
+    @FXML private ListView<String> contactListView;
+
 
     private Contact contact= new Contact();
 
@@ -41,10 +48,18 @@ private void handleAddContact(){
 
 
     @FXML
-    protected void handleShowLisa() {
+    protected void handleContacts() {
+        HashMap<String,String> contacts = contact.getAllContactList();
+        ObservableList<String>items = FXCollections.observableArrayList();
+        for(var entry : contacts.entrySet()){
+            String name = entry.getKey();
+            String phone = entry.getValue();
+            Role role =contact.getRole(name);
+            String displayText = name + ":" + phone +"("+role + ")";
+            items.add(displayText);
+        }
 
-        String phone = contact.getPhoneNumber("Lisa");
-        Role role = contact.getRole("Lisa");
-        outputLabel.setText("Lisa: " + phone +" (" + role + ")");
+       contactListView.setItems(items);
+        outputLabel.setText("Contact listed");
     }
 }

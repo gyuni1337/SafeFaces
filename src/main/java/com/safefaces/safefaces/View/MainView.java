@@ -1,4 +1,4 @@
-package com.safefaces.safefaces;
+package com.safefaces.safefaces.View;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -12,7 +12,10 @@ public class MainView extends Application {
 
         @Override
         public void start(Stage stage) throws IOException {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/safefaces/safefaces/contact-view.fxml"));
+            var url = getClass().getResource("/com/safefaces/safefaces/main-view.fxml");
+            System.out.println(" Path " +url);
+            FXMLLoader fxmlLoader = new FXMLLoader(url);
+
             Scene scene = new Scene(fxmlLoader.load(), 320, 240);
             stage.setTitle("SafeFaces");
             stage.setScene(scene);

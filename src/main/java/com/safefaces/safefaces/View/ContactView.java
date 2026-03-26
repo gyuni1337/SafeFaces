@@ -7,7 +7,7 @@ package com.safefaces.safefaces.View;
 public class ContactView {
 
     public Parent getView() throws IOException{
-        FXMLLoader loader = new FXMLLoader( getClass().getResource("/com/safefaces/safefaces/contact-view.fxml")
+        FXMLLoader loader = new FXMLLoader( getClass().getResource("com/safefaces/safefaces/View/ContactView.java")
         );
         return loader.load();
     }
