@@ -8,4 +8,10 @@ module com.safefaces.safefaces {
 
     opens com.safefaces.safefaces to javafx.fxml;
     exports com.safefaces.safefaces;
+    exports com.safefaces.safefaces.Model;
+    opens com.safefaces.safefaces.Model to javafx.fxml;
+    exports com.safefaces.safefaces.Controller;
+    opens com.safefaces.safefaces.Controller to javafx.fxml;
+    exports com.safefaces.safefaces.View;
+    opens com.safefaces.safefaces.View to javafx.fxml;
 }

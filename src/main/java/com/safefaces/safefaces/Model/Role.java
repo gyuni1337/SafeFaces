@@ -1,4 +1,4 @@
-package com.safefaces.safefaces;
+package com.safefaces.safefaces.Model;
 
 public enum Role {
     USER,
