@@ -3,6 +3,8 @@
 <?import com.gluonhq.charm.glisten.control.Avatar?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
@@ -15,11 +17,18 @@
             <font>
                <Font name="Arial Rounded MT Bold" size="64.0" />
             </font>
+            <padding>
+               <Insets top="10.0" />
+            </padding>
          </Label>
          <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
             <children>
-               <Avatar />
-               <Label text="Hi, &lt;name&gt;!" textAlignment="RIGHT">
+               <Avatar radius="30.0">
+                  <image>
+                     <Image url="@../../../../../../../../MAU/DA336A/oldmanexample.jpg" />
+                  </image>
+               </Avatar>
+               <Label text="Hello, Henry!" textAlignment="RIGHT">
                   <font>
                      <Font name="Arial Rounded MT Bold" size="24.0" />
                   </font>
@@ -31,4 +40,41 @@
          </HBox>
       </children>
    </VBox>
+   <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="185.0">
+      <content>
+         <VBox prefHeight="559.0" prefWidth="371.0" spacing="20.0">
+            <children>
+               <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                  <padding>
+                     <Insets left="20.0" right="20.0" />
+                  </padding>
+                  <children>
+                     <Avatar>
+                        <image>
+                           <Image url="@../../../../../../../../MAU/DA336A/emptyavatar.jpg" />
+                        </image>
+                     </Avatar>
+                     <Label text="&lt;name&gt;" />
+                  </children>
+               </HBox>
+               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+                  <padding>
+                     <Insets left="20.0" right="20.0" />
+                  </padding>
+                  <children>
+                     <Avatar>
+                        <image>
+                           <Image url="@../../../../../../../../MAU/DA336A/emptyavatar.jpg" />
+                        </image>
+                     </Avatar>
+                     <Label text="&lt;name&gt;" />
+                  </children>
+               </HBox>
+            </children>
+            <padding>
+               <Insets right="20.0" />
+            </padding>
+         </VBox>
+      </content>
+   </ScrollPane>
 </AnchorPane>
