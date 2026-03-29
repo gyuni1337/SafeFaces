@@ -3,6 +3,7 @@ package com.safefaces.safefaces.Controller;
 import com.safefaces.safefaces.Model.Contact;
 import com.safefaces.safefaces.Model.Role;
 import com.safefaces.safefaces.Model.User;
+import com.safefaces.safefaces.Controller.UserViewController;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -75,15 +76,9 @@ private void handleAddContact(){
             Parent root = loader.load();
 
             UserViewController controller = loader.getController();
-            User demoUser = new User(
-                    1,
-                    "Henry",
-                    "oldmanexample.jpg",
-                    "henry1",
-                    "password",
-                    Role.USER
+            controller.setUser(
+                    new User(1, "Henry", "oldmanexample.jpg", "henry1", "password", Role.USER)
             );
-            controller.setUser(demoUser);
 
             Stage stage = (Stage) nameField.getScene().getWindow();
             stage.setScene(new Scene(root));
@@ -94,3 +89,4 @@ private void handleAddContact(){
         }
     }
 }
+
