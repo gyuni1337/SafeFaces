@@ -1,6 +1,9 @@
 package com.safefaces.safefaces.Controller;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
@@ -9,6 +12,7 @@ import javafx.scene.layout.VBox;
 
 import com.safefaces.safefaces.Model.User;
 import javafx.scene.shape.Circle;
+import javafx.stage.Stage;
 
 import java.util.Objects;
 
@@ -83,4 +87,19 @@ public class UserViewController {
             contactListBox.getChildren().add(row);
         }
     }
+     @FXML
+    private void openPhoneBook(){
+        try{
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/safefaces/safefaces/main-view.fxml"));
+            Parent root = loader.load();
+
+            Stage stage =(Stage) profileNameLabel.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+     }
+
 }

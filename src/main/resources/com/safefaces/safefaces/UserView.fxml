@@ -10,6 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
+<?import javafx.scene.control.Button?>
 <AnchorPane prefHeight="812.0" prefWidth="375.0"
             xmlns="http://javafx.com/javafx/20.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
@@ -70,6 +71,7 @@
                 <padding>
                     <Insets top="10" left="20" right="20" bottom="10"/>
                 </padding>
+                <Button text ="Phonebook" onAction="#openPhoneBook"/>
             </VBox>
         </content>
 

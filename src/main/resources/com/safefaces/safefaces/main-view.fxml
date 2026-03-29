@@ -13,11 +13,8 @@
     </padding>
 
     <TextField fx:id="nameField" prefHeight="3.0" prefWidth="118.0" promptText="Name" />
-    <TextField fx:id="phoneField" promptText="PhoneNumber" />
-    <Label fx:id="outputLabel" />
     <Button onAction="#handleAddContact" text="Add contact" />
     <Button onAction="#handleContacts" text=" Contact list" />
-    <TextField fx:id="nameField" promptText="Name"/>
     <TextField fx:id="phoneField" promptText="PhoneNumber"/>
     <Label fx:id="outputLabel"/>
     <Button text="Add contact" onAction="#handleAddContact"/>
