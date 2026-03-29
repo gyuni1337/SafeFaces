@@ -17,4 +17,6 @@
     <Label fx:id="outputLabel"/>
     <Button text="Add contact" onAction="#handleAddContact"/>
     <Button text=" Contact list" onAction="#handleContacts"/>
+    <Button text="Open User View" onAction="#openUserView"/>
+
 </VBox>
