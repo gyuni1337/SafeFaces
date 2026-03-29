@@ -37,12 +37,20 @@ public class UserViewController {
         }
     }
 
+    /* Skapade metoden bara som exempel för demon */
     private void loadExampleContacts() {
 
         String[][] demo = {
                 {"Anna Anderson", "emptyavatar.jpg"},
                 {"John Berger", "emptyavatar.jpg"},
-                {"Leonore Smith", "emptyavatar.jpg"}
+                {"Leonore Smith", "emptyavatar.jpg"},
+                {"Marie Schwartz", "emptyavatar.jpg"},
+                {"Peter Parker", "emptyavatar.jpg"},
+                {"Joanne Jo", "emptyavatar.jpg"},
+                {"Oscar Nilsen", "emptyavatar.jpg"},
+                {"Carl Carlson", "emptyavatar.jpg"},
+                {"Dani Do", "emptyavatar.jpg"},
+                {"Louis Lane", "emptyavatar.jpg"}
         };
 
         for (String[] c : demo) {
