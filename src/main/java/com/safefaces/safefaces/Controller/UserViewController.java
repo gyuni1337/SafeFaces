@@ -8,6 +8,7 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
 import com.safefaces.safefaces.Model.User;
+import javafx.scene.shape.Circle;
 
 import java.util.Objects;
 
@@ -26,6 +27,7 @@ public class UserViewController {
     }
 
     private void updateProfile() {
+        makeImageRound(profileImage);
         profileNameLabel.setText("Hello, " + activeUser.getName() + "!");
 
         try {
@@ -36,6 +38,13 @@ public class UserViewController {
             System.out.println("Could not load profile image");
         }
     }
+
+    private void makeImageRound(ImageView imageView) {
+        double radius = Math.min(imageView.getFitWidth(), imageView.getFitHeight()) / 2;
+        Circle clip = new Circle(radius, radius, radius);
+        imageView.setClip(clip);
+    }
+
 
     /* Skapade metoden bara som exempel för demon */
     private void loadExampleContacts() {
