@@ -1,80 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import com.gluonhq.charm.glisten.control.Avatar?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="812.0" prefWidth="375.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/25">
-   <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-      <children>
-          <Label alignment="TOP_CENTER" contentDisplay="TOP" text="SafeFaces" textAlignment="CENTER" textOverrun="CLIP">
-            <font>
-               <Font name="Arial Rounded MT Bold" size="64.0" />
-            </font>
-            <padding>
-               <Insets top="10.0" />
-            </padding>
-         </Label>
-         <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
-            <children>
-               <Avatar radius="30.0">
-                  <image>
-                     <Image url="@../../../../../../../../MAU/DA336A/oldmanexample.jpg" />
-                  </image>
-               </Avatar>
-               <Label text="Hello, Henry!" textAlignment="RIGHT">
-                  <font>
-                     <Font name="Arial Rounded MT Bold" size="24.0" />
-                  </font>
-               </Label>
-            </children>
-            <padding>
-               <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
-            </padding>
-         </HBox>
-      </children>
-   </VBox>
-   <ScrollPane fitToHeight="true" fitToWidth="true" layoutY="185.0">
-      <content>
-         <VBox prefHeight="559.0" prefWidth="371.0" spacing="20.0">
-            <children>
-               <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
-                  <padding>
-                     <Insets left="20.0" right="20.0" />
-                  </padding>
-                  <children>
-                     <Avatar>
+<AnchorPane prefHeight="812.0" prefWidth="375.0"
+            xmlns="http://javafx.com/javafx/20.0.1"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.safefaces.safefaces.Controller.UserViewController">
+
+    <VBox alignment="TOP_CENTER"
+          AnchorPane.leftAnchor="0"
+          AnchorPane.rightAnchor="0"
+          AnchorPane.topAnchor="0">
+
+        <children>
+
+            <Label text="SafeFaces" alignment="CENTER">
+                <font>
+                    <Font name="Arial Rounded MT Bold" size="48"/>
+                </font>
+                <padding>
+                    <Insets top="20"/>
+                </padding>
+            </Label>
+
+            <HBox alignment="CENTER_LEFT" spacing="15">
+                <padding>
+                    <Insets top="10" bottom="10" left="20" right="20"/>
+                </padding>
+
+                <children>
+
+                    <ImageView fx:id="profileImage"
+                               fitWidth="80"
+                               fitHeight="80"
+                               preserveRatio="true">
                         <image>
-                           <Image url="@../../../../../../../../MAU/DA336A/emptyavatar.jpg" />
+                            <Image url="@images/oldmanexample.jpg"/>
                         </image>
-                     </Avatar>
-                     <Label text="&lt;name&gt;" />
-                  </children>
-               </HBox>
-               <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
-                  <padding>
-                     <Insets left="20.0" right="20.0" />
-                  </padding>
-                  <children>
-                     <Avatar>
-                        <image>
-                           <Image url="@../../../../../../../../MAU/DA336A/emptyavatar.jpg" />
-                        </image>
-                     </Avatar>
-                     <Label text="&lt;name&gt;" />
-                  </children>
-               </HBox>
-            </children>
-            <padding>
-               <Insets right="20.0" />
-            </padding>
-         </VBox>
-      </content>
-   </ScrollPane>
+                    </ImageView>
+
+                    <Label fx:id="profileNameLabel" text="Hello!">
+                        <font>
+                            <Font name="Arial Rounded MT Bold" size="24"/>
+                        </font>
+                    </Label>
+
+                </children>
+            </HBox>
+
+        </children>
+    </VBox>
+
+    <ScrollPane fitToWidth="true" hbarPolicy="NEVER"
+                AnchorPane.topAnchor="200"
+                AnchorPane.leftAnchor="0"
+                AnchorPane.rightAnchor="0"
+                AnchorPane.bottomAnchor="0">
+
+        <content>
+            <VBox fx:id="contactListBox" spacing="20">
+                <padding>
+                    <Insets top="10" left="20" right="20" bottom="10"/>
+                </padding>
+            </VBox>
+        </content>
+
+    </ScrollPane>
+
 </AnchorPane>
