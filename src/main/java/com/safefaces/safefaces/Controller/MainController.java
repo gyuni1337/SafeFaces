@@ -2,13 +2,18 @@ package com.safefaces.safefaces.Controller;
 
 import com.safefaces.safefaces.Model.Contact;
 import com.safefaces.safefaces.Model.Role;
+import com.safefaces.safefaces.Model.User;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
 
 import java.util.HashMap;
 
@@ -61,5 +66,31 @@ private void handleAddContact(){
 
        contactListView.setItems(items);
         outputLabel.setText("Contact listed");
+    }
+
+    @FXML
+    private void openUserView() {
+        try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/safefaces/safefaces/UserView.fxml"));
+            Parent root = loader.load();
+
+            UserViewController controller = loader.getController();
+            User demoUser = new User(
+                    1,
+                    "Henry",
+                    "oldmanexample.jpg",
+                    "henry1",
+                    "password",
+                    Role.USER
+            );
+            controller.setUser(demoUser);
+
+            Stage stage = (Stage) nameField.getScene().getWindow();
+            stage.setScene(new Scene(root));
+            stage.show();
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
