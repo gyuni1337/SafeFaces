@@ -1,47 +1,20 @@
 package com.safefaces.safefaces.Model;
 
-import java.util.HashMap;
-
 public class Contact {
-    private HashMap<String,String> contactList = new HashMap<>();
-    private  HashMap< String, Role> roles =new HashMap<>();
+    private String name;
+    private String phone;
+    private Role role;
 
-    public Contact(){
-
+    public Contact(String name, String phone, Role role) {
+        this.name = name;
+        this.phone = phone;
+        this.role = role;
     }
 
-    public void addContact( String name, String phoneNumber, Role role){
-        contactList.put(name,phoneNumber);
-        roles.put(name,role);
+    public String getName() { return name; }
+    public String getPhone() { return phone; }
+    public Role getRole() { return role; }
 
-
-    }
-    public void removeContact(String name){
-        contactList.remove(name);
-        roles.remove(name);
-    }
-    public void updateContact(String name,String phoneNumber, Role role){
-        if(contactList.containsKey(name)){
-            contactList.put(name, phoneNumber);
-            roles.put(name,role);
-        }else{
-            System.out.println("The name does not exist" + name);
-        }
-    }
-    public String getPhoneNumber(String name){
-        return contactList.get(name);
-    }
-    public Role getRole(String name){
-        return roles.get(name);
-    }
-
-
-    public HashMap<String, Role> getRole() {
-        return roles;
-    }
-
-    public HashMap<String, String> getAllContactList() {
-
-        return contactList;
-    }
+    public void setPhone(String phone) { this.phone = phone; }
+    public void setRole(Role role) { this.role = role; }
 }
