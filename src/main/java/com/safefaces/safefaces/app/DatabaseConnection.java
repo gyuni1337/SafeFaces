@@ -1,4 +1,4 @@
-package com.safefaces.safefaces;
+package com.safefaces.safefaces.app;
 
 public class DatabaseConnection {
 

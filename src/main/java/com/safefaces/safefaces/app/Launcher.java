@@ -1,4 +1,4 @@
-package com.safefaces.safefaces;
+package com.safefaces.safefaces.app;
 
 import com.safefaces.safefaces.View.MainView;
 import javafx.application.Application;
