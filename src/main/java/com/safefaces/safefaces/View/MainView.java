@@ -9,8 +9,10 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
-import javax.imageio.IIOParam;
 import java.io.IOException;
+
+import static javafx.application.Application.launch;
+
 
 
 public class MainView extends Application {
@@ -30,7 +32,7 @@ public class MainView extends Application {
            // FXMLLoader fxmlLoader = new FXMLLoader(url);
 
 
-            Scene scene = new Scene(root, 400, 4000);
+            Scene scene = new Scene(root, 400, 400);
             stage.setTitle("SafeFaces");
             stage.setScene(scene);
             stage.show();
