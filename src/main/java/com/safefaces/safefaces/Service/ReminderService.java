@@ -14,8 +14,7 @@ public class ReminderService {
         this.reminderRepo = reminderRepo;
     }
 
-    public Reminder createReminder(Reminder reminder, int createdBy, int ownerId) {
-        reminder.setCreatorId(createdBy);
+    public Reminder createReminder(Reminder reminder, int ownerId) {
         reminder.setOwnerId(ownerId);
         return reminderRepo.save(reminder);
     }

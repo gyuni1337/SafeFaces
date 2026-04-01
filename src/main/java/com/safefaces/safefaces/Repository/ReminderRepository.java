@@ -8,5 +8,5 @@ public interface ReminderRepository {
     Reminder save(Reminder reminder);
 
     List<Reminder> findByCreatorId(int creatorId);
-    List<Reminder> findByOwnerId(int ownerId);
+//    List<Reminder> findByOwnerId(int ownerId);
 }
