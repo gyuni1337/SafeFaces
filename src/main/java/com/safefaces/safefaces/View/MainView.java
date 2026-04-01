@@ -28,7 +28,7 @@ public class MainView extends Application {
             );
 
 
-           // var url = getClass().getResource("/com/safefaces/safefaces/main-view.fxml");
+           // var url = getClass().getResource("/com/safefaces/safefaces/MainView.fxml");
            // FXMLLoader fxmlLoader = new FXMLLoader(url);
 
 
@@ -38,7 +38,4 @@ public class MainView extends Application {
             stage.show();
         }
 
-        public static void main (String[]args){
-            launch();
-        }
 }

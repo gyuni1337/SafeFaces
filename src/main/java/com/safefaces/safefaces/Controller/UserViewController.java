@@ -90,7 +90,7 @@ public class UserViewController {
      @FXML
     private void openPhoneBook(){
         try{
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/safefaces/safefaces/main-view.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/safefaces/safefaces/MainView.fxml"));
             Parent root = loader.load();
 
             Stage stage =(Stage) profileNameLabel.getScene().getWindow();
