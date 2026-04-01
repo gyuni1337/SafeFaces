@@ -1,6 +1,30 @@
 package com.safefaces.safefaces.Service;
 
+import com.safefaces.safefaces.Model.Reminder;
+import com.safefaces.safefaces.Repository.ReminderRepository;
+
+import java.util.List;
+
 public class ReminderService {
+
+
+    private ReminderRepository reminderRepo;
+
+    public ReminderService(ReminderRepository reminderRepo) {
+        this.reminderRepo = reminderRepo;
+    }
+
+    public Reminder createReminder(Reminder reminder, int createdBy, int ownerId) {
+        reminder.setCreatorId(createdBy);
+        reminder.setOwnerId(ownerId);
+        return reminderRepo.save(reminder);
+    }
+
+
+    public List<Reminder> getUserReminders(int createdBy) {
+        return reminderRepo.findByCreatorId(createdBy);
+    }
+
 
     // homeView: upcoming/reminders in time span. include at what time to take medications DAILY ( ONLY set by caregiver ) by default;
     // profileView aka Jag view: caregiver at top with call now button. underneath is each medication information like dosage, time to take, etc.
@@ -14,13 +38,6 @@ public class ReminderService {
 
 
 
-//    REMINDER object:
-
-//    message;
-//    description (optional );
-//    startTime;
-//    endTime;
-//    ownerId:
 
 //    REMINDER requiredFunctions:
 //    - createReminder(userId, to save to database as ownerId of reminder);
