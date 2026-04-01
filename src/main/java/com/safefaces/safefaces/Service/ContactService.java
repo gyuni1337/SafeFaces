@@ -1,4 +1,4 @@
-package com.safefaces.safefaces.Services;
+package com.safefaces.safefaces.Service;
 
 import com.safefaces.safefaces.Model.Contact;
 import com.safefaces.safefaces.Model.Role;

@@ -16,4 +16,6 @@ module com.safefaces.safefaces {
     opens com.safefaces.safefaces.View to javafx.fxml;
     exports com.safefaces.safefaces.App;
     opens com.safefaces.safefaces.App to javafx.fxml;
+    exports com.safefaces.safefaces.Service;
+    opens com.safefaces.safefaces.Service to javafx.fxml;
 }

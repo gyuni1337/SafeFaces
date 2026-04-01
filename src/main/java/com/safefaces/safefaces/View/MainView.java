@@ -11,13 +11,12 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-import static javafx.application.Application.launch;
 
 
 
 public class MainView extends Application {
 
-        @Override
+    @Override
         public void start(Stage stage) throws IOException {
 
             FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/safefaces/safefaces/UserView.fxml"));

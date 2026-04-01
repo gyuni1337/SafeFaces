@@ -3,7 +3,7 @@ package com.safefaces.safefaces.Controller;
 import com.safefaces.safefaces.Model.Contact;
 import com.safefaces.safefaces.Model.Role;
 import com.safefaces.safefaces.Model.User;
-import com.safefaces.safefaces.Services.ContactService;
+import com.safefaces.safefaces.Service.ContactService;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
