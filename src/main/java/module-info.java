@@ -8,7 +8,6 @@ module com.safefaces.safefaces {
     requires java.desktop;
 
     opens com.safefaces.safefaces to javafx.fxml;
-    exports com.safefaces.safefaces;
     exports com.safefaces.safefaces.Model;
     opens com.safefaces.safefaces.Model to javafx.fxml;
     exports com.safefaces.safefaces.Controller;
