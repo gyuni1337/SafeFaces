@@ -1,4 +1,4 @@
-package com.safefaces.safefaces.Backend.Model;
+package com.safefaces.safefaces.Model;
 
 import java.util.HashMap;
 
