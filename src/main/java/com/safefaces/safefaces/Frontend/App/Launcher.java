@@ -1,6 +1,6 @@
-package com.safefaces.safefaces.App;
+package com.safefaces.safefaces.Frontend.App;
 
-import com.safefaces.safefaces.View.MainView;
+import com.safefaces.safefaces.Frontend.View.MainView;
 import javafx.application.Application;
 
 public class Launcher {

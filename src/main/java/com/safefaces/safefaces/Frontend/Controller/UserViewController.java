@@ -1,4 +1,4 @@
-package com.safefaces.safefaces.Controller;
+package com.safefaces.safefaces.Frontend.Controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
 
-import com.safefaces.safefaces.Model.User;
+import com.safefaces.safefaces.Backend.Model.User;
 import javafx.scene.shape.Circle;
 import javafx.stage.Stage;
 

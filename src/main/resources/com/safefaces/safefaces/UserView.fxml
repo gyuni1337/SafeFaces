@@ -14,7 +14,7 @@
 <AnchorPane prefHeight="812.0" prefWidth="375.0"
             xmlns="http://javafx.com/javafx/20.0.1"
             xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="com.safefaces.safefaces.Controller.UserViewController">
+            fx:controller="com.safefaces.safefaces.Frontend.Controller.UserViewController">
 
     <VBox alignment="TOP_CENTER"
           AnchorPane.leftAnchor="0"

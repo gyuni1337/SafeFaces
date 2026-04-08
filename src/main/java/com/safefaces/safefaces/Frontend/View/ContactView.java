@@ -1,5 +1,4 @@
-package com.safefaces.safefaces.View;
- import javafx.fxml.FXML;
+package com.safefaces.safefaces.Frontend.View;
  import javafx.fxml.FXMLLoader;
  import javafx.scene.Parent;
  import java.io.IOException;
