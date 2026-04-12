@@ -29,5 +29,5 @@ Applikationen är just nu en demo där all data (användare, kontakter och infor
    git clone https://github.com/gyuni1337/SafeFaces.git
 2. Öppna projektet i valfri IDE (t.ex. IntelliJ).
 
-3. Starta applikationen via huvudklassen (src/main/java/com.safefaces.safefaces/App:
-   - Launcher
+3. Starta applikationen via klassen (src/main/java/com.safefaces.safefaces/View:
+   - MainView
