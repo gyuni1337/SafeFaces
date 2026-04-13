@@ -6,6 +6,7 @@ module com.safefaces.safefaces {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
     requires java.desktop;
+    requires java.sql;
 
     opens com.safefaces.safefaces to javafx.fxml;
     exports com.safefaces.safefaces.Model;
@@ -16,4 +17,6 @@ module com.safefaces.safefaces {
     opens com.safefaces.safefaces.View to javafx.fxml;
     exports com.safefaces.safefaces.App;
     opens com.safefaces.safefaces.App to javafx.fxml;
+    exports com.safefaces.safefaces.Backend;
+    opens com.safefaces.safefaces.Backend to javafx.fxml;
 }
