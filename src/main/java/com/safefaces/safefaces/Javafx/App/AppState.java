@@ -1,4 +1,4 @@
-package com.safefaces.safefaces.App;
+package com.safefaces.safefaces.Javafx.App;
 
 import com.safefaces.safefaces.Backend.Model.User;
 

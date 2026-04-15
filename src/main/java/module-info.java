@@ -9,14 +9,14 @@ module com.safefaces.safefaces {
     requires java.sql;
 
     opens com.safefaces.safefaces to javafx.fxml;
-    exports com.safefaces.safefaces.Model;
-    opens com.safefaces.safefaces.Model to javafx.fxml;
-    exports com.safefaces.safefaces.Controller;
-    opens com.safefaces.safefaces.Controller to javafx.fxml;
-    exports com.safefaces.safefaces.View;
-    opens com.safefaces.safefaces.View to javafx.fxml;
-    exports com.safefaces.safefaces.App;
-    opens com.safefaces.safefaces.App to javafx.fxml;
+    exports com.safefaces.safefaces.Javafx.Model;
+    opens com.safefaces.safefaces.Javafx.Model to javafx.fxml;
+    exports com.safefaces.safefaces.Javafx.Controller;
+    opens com.safefaces.safefaces.Javafx.Controller to javafx.fxml;
+    exports com.safefaces.safefaces.Javafx.View;
+    opens com.safefaces.safefaces.Javafx.View to javafx.fxml;
+    exports com.safefaces.safefaces.Javafx.App;
+    opens com.safefaces.safefaces.Javafx.App to javafx.fxml;
     exports com.safefaces.safefaces.Backend;
     opens com.safefaces.safefaces.Backend to javafx.fxml;
 }

@@ -1,4 +1,4 @@
-package com.safefaces.safefaces.Model;
+package com.safefaces.safefaces.Javafx.Model;
 
 import java.util.HashMap;
 

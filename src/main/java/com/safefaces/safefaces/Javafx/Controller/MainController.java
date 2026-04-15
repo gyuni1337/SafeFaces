@@ -1,9 +1,8 @@
-package com.safefaces.safefaces.Controller;
+package com.safefaces.safefaces.Javafx.Controller;
 
-import com.safefaces.safefaces.Model.Contact;
-import com.safefaces.safefaces.Model.Role;
-import com.safefaces.safefaces.Model.User;
-import com.safefaces.safefaces.Controller.UserViewController;
+import com.safefaces.safefaces.Javafx.Model.Contact;
+import com.safefaces.safefaces.Javafx.Model.Role;
+import com.safefaces.safefaces.Javafx.Model.User;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;

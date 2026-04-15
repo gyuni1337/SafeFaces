@@ -1,4 +1,4 @@
-package com.safefaces.safefaces.Model;
+package com.safefaces.safefaces.Javafx.Model;
 
 public class User {
     private int userID;

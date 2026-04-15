@@ -1,8 +1,6 @@
 package com.safefaces.safefaces.Backend.Controller;
 
-import com.safefaces.safefaces.App.AppState;
-import com.safefaces.safefaces.Backend.Model.User;
-import com.safefaces.safefaces.Backend.Service.AuthService;
+import com.safefaces.safefaces.Javafx.App.AppState;
 
 public class AuthController {
 
