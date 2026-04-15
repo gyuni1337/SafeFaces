@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class Contact {
     private HashMap<String,String> contactList = new HashMap<>();
-    private  HashMap< String, Role> roles =new HashMap<>();
+    private HashMap< String, Role> roles =new HashMap<>();
 
     public Contact(){
 
