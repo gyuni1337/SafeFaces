@@ -4,7 +4,9 @@ import com.safefaces.safefaces.Backend.Model.User;
 
 public class AuthService {
 
-    public User login() {
+    public User login(String username, String pin ) {
+
+        return new User(); // inte klar
 
     }
 }
