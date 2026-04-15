@@ -12,7 +12,7 @@ public class AuthController {
     }
 
     public void login(String username, String pin) {
-        User currentUser = AuthService.login(username, pin);
+//        User currentUser = AuthService.login(username, pin);
 
     }
 }
