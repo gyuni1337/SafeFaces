@@ -159,25 +159,7 @@
 
             <!-- BOTTOM NAV -->
             <bottom>
-                <HBox alignment="CENTER" prefHeight="78.0" spacing="85.0" style="-fx-background-color: #efefef; -fx-border-color: #dddddd transparent transparent transparent; -fx-border-width: 1 0 0 0;">
-               <children>
-                  <ImageView fitHeight="46.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/user.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="46.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/home.png" />
-                     </image>
-                  </ImageView>
-                  <ImageView fitHeight="46.0" fitWidth="48.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/user.png" />
-                     </image>
-                  </ImageView>
-               </children>
-                </HBox>
+                <fx:include source="components/BottomNav.fxml"/>
             </bottom>
 
         </BorderPane>
