@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="400.0" style="-fx-background-color: #f4f4f4;" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.safefaces.safefaces.Javafx.Controller.UserViewController">
+
+    <children>
+        <BorderPane prefHeight="800.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+
+            <!-- CENTER CONTENT -->
+            <center>
+                <VBox alignment="TOP_CENTER" spacing="28.0" BorderPane.alignment="CENTER">
+                    <padding>
+                        <Insets bottom="24.0" left="24.0" right="24.0" top="28.0" />
+                    </padding>
+
+                    <!-- TOP BRAND -->
+                    <HBox alignment="CENTER" spacing="15.0">
+                        <children>
+                            <Label style="-fx-text-fill: #3a3a3a;" text="SafeFaces">
+                                <font>
+                                    <Font name="System" size="14.0" />
+                                </font>
+                            </Label>
+                            <ImageView fitHeight="24.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@images/logo.png" />
+                                </image>
+                            </ImageView>
+                        </children>
+                    </HBox>
+
+                    <!-- GREETING -->
+                </VBox>
+            </center>
+
+            <!-- BOTTOM NAV -->
+            <bottom>
+                <fx:include source="components/BottomNav.fxml"/>
+            </bottom>
+
+        </BorderPane>
+    </children>
+</AnchorPane>
