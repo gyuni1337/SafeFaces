@@ -28,6 +28,8 @@ public class MainController {
 
     private Contact contact= new Contact();
 
+
+
     @FXML
     public void initialize(){
         contact.addContact("Lisa", "0701", Role.RELATIVE);
