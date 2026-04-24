@@ -28,6 +28,8 @@ public class MainController {
 
     private Contact contact= new Contact();
 
+
+
     @FXML
     public void initialize(){
         contact.addContact("Lisa", "0701", Role.RELATIVE);
@@ -71,13 +73,13 @@ private void handleAddContact(){
     @FXML
     private void openUserView() {
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/safefaces/safefaces/UserView.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("/com/safefaces/safefaces/HomeView.fxml"));
             Parent root = loader.load();
 
             UserViewController controller = loader.getController();
-            controller.setUser(
-                    new User(1, "Henry", "oldmanexample.jpg", "henry1", "password", Role.USER)
-            );
+//            controller.setUser(
+//                    new User(1, "Henry", "oldmanexample.jpg", "henry1", "password", Role.USER)
+//            );
 
             Stage stage = (Stage) nameField.getScene().getWindow();
             stage.setScene(new Scene(root));

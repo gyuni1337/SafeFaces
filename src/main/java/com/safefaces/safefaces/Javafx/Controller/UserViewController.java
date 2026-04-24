@@ -24,30 +24,30 @@ public class UserViewController {
 
     private User activeUser;
 
-    public void setUser(User user) {
-        this.activeUser = user;
-        updateProfile();
-        loadExampleContacts();
-    }
+//    public void setUser(User user) {
+//        this.activeUser = user;
+//        updateProfile();
+//        loadExampleContacts();
+//    }
 
-    private void updateProfile() {
-        makeImageRound(profileImage);
-        profileNameLabel.setText("Hello, " + activeUser.getName() + "!");
-
-        try {
-            Image image = new Image(
-                    Objects.requireNonNull(getClass().getResourceAsStream("/com/safefaces/safefaces/images/" + activeUser.getImagePath())));
-            profileImage.setImage(image);
-        } catch (Exception e) {
-            System.out.println("Could not load profile image");
-        }
-    }
-
-    private void makeImageRound(ImageView imageView) {
-        double radius = Math.min(imageView.getFitWidth(), imageView.getFitHeight()) / 2;
-        Circle clip = new Circle(radius, radius, radius);
-        imageView.setClip(clip);
-    }
+//    private void updateProfile() {
+//        makeImageRound(profileImage);
+//        profileNameLabel.setText("Hello, " + activeUser.getName() + "!");
+//
+//        try {
+//            Image image = new Image(
+//                    Objects.requireNonNull(getClass().getResourceAsStream("/com/safefaces/safefaces/images/" + activeUser.getImagePath())));
+//            profileImage.setImage(image);
+//        } catch (Exception e) {
+//            System.out.println("Could not load profile image");
+//        }
+//    }
+//
+//    private void makeImageRound(ImageView imageView) {
+//        double radius = Math.min(imageView.getFitWidth(), imageView.getFitHeight()) / 2;
+//        Circle clip = new Circle(radius, radius, radius);
+//        imageView.setClip(clip);
+//    }
 
 
     /* Skapade metoden bara som exempel för demon */
