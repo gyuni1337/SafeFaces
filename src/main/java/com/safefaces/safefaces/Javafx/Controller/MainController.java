@@ -31,11 +31,13 @@ public class MainController {
 
 
     @FXML
-    public void initialize(){
+    public void handelContacts(){
         contact.addContact("Lisa", "0701", Role.RELATIVE);
         contact.addContact("Aisha","0702",Role.CAREGIVER);
         contact.addContact("John","0703",Role.RELATIVE);
         contact.addContact("Bart","0704",Role.CAREGIVER);
+
+        handleContacts();
     }
     @FXML
 private void handleAddContact(){
@@ -50,6 +52,8 @@ private void handleAddContact(){
         outputLabel.setText( name +" has been registered");
         nameField.clear();
         phoneField.clear();
+
+        handleContacts();
 }
 
 
